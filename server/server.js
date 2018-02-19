@@ -51,10 +51,10 @@ app.get('/todos/:id', (req, res) => {
   })
 });
 
+var port = process.env.PORT || 3000;
 
-
-app.listen(3000, ()=> {
-  console.log('Spinning up server on port 3000');
+app.listen(port, ()=> {
+  console.log(`Spinning up server on port ${port}`);
 });
 
 module.exports = {app};
