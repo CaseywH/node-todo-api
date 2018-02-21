@@ -1,3 +1,5 @@
+require('./config/config');
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -97,7 +99,7 @@ app.patch('/todos/:id', (req, res) => {
 });
 
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT;
 
 app.listen(port, ()=> {
   console.log(`Spinning up server on port ${port}`);
