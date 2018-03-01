@@ -49,5 +49,5 @@ module.exports = {
   todos,
   populateTodos,
   users,
-  populateUsers
+  populateUsers,
 };
