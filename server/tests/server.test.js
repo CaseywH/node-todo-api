@@ -191,7 +191,7 @@ describe('PATCH /todos/:id', () => {
       // completed at is a number .toBeA...
   });
 
-  it('should update the todo', (done) => {
+  it('should not update the todo created by another user', (done) => {
     //grab id of first item
     var hexId = todos[0]._id.toHexString();
     var text = 'this is the new text';
